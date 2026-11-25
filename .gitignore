@@ -1,0 +1,11 @@
+.venv/
+.python-runtime/
+.python-runtime-embedded/
+__pycache__/
+.pytest_cache/
+data/raw/*
+data/clean/*
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+*.pbix
+.env

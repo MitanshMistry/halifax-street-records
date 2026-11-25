@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>How these estimates are made | Halifax Street Records</title>
+  <meta name="description" content="Where the numbers come from, how HRM report close dates are counted, and what the records cannot tell you.">
+  <link rel="icon" href="{{BASE_PATH}}favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{BASE_PATH}}css/style.css">
+  <script defer src="{{BASE_PATH}}js/site.js"></script>
+</head>
+<body class="no-js" data-base-path="{{BASE_PATH}}" data-pull-date="{{PULL_DATE}}" data-stale-days="180">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="stale-banner" id="stale-banner" role="status" hidden>HRM data on this page is from <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time> and may be out of date.</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{BASE_PATH}}index.html"><svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M8 2 5 10l3 5-2 11M20 2l3 8-3 5 2 11M14 3v5m0 5v4m0 5v3" /></svg><span class="brand-copy"><span class="brand-name">Halifax Street Records</span><small class="brand-tagline">Past reports about road-surface problems, when HRM marked them closed, and where to report an issue.</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{BASE_PATH}}index.html">Home</a><a href="{{BASE_PATH}}index.html#guides">Guides</a><a href="{{BASE_PATH}}about.html" aria-current="page">About the estimates</a>
+        <a class="external-nav" href="https://www.halifax.ca/transportation/streets-sidewalks/paving-repair/report-a-pothole" target="_blank" rel="noopener noreferrer"><span>Report a pothole to HRM</span><small>opens halifax.ca</small></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-shell page-shell--reading">
+    <p class="eyebrow">Where the numbers come from</p>
+    <h1>How these estimates are made</h1>
+    <p>This site summarizes past HRM reports about street-surface problems. It shows when HRM recorded a report as closed, not when the road was repaired. HRM data was downloaded on <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time>; this page does not update live.</p>
+    <p>We calculate the numbers on this site from the downloaded HRM data.</p>
+
+    <section class="content-panel" id="data-source">
+      <h2>Which HRM data we use</h2>
+      <p>We use four public HRM data sets. The table shows how many records came from each. HRM uses “Custom Fields” for extra details linked to reports or work orders (recorded jobs). This site publishes totals, not individual records.</p>
+      <div class="table-scroll">
+        <table>
+          <caption>Records read from each HRM data set</caption>
+          <thead><tr><th scope="col">HRM data set</th><th scope="col" class="numeric">Records</th></tr></thead>
+          <tbody>{{SOURCE_ROWS}}</tbody>
+        </table>
+      </div>
+      <ul>
+        <li><a href="https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Cityworks_Service_Requests/FeatureServer/0" target="_blank" rel="noopener noreferrer">Service Requests layer</a></li>
+        <li><a href="https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Cityworks_Work_Orders/FeatureServer/0" target="_blank" rel="noopener noreferrer">Work Orders layer</a></li>
+        <li><a href="https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Cityworks_Work_Orders_Custom_Fields/FeatureServer/0" target="_blank" rel="noopener noreferrer">Work Orders Custom Fields layer</a></li>
+        <li><a href="https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Cityworks_Service_Requests_Custom_Fields/FeatureServer/0" target="_blank" rel="noopener noreferrer">Service Requests Custom Fields layer</a></li>
+      </ul>
+      <p>Download the <a href="{{BASE_PATH}}data/summary.json">summary data</a>, <a href="{{BASE_PATH}}data/districts.json">district data</a>, <a href="{{BASE_PATH}}data/monthly.json">monthly counts</a>, and <a href="{{BASE_PATH}}data/weekly.json">weekly counts</a>. The monthly and weekly files show reports started and reports closed in each period; the charts show only the reports started.</p>
+    </section>
+
+    <section class="content-panel" id="report-scope">
+      <h2>What these reports cover</h2>
+      <p>HRM groups these reports under “Street Surface Maintenance.” This category covers more than potholes. HRM’s records do not show the exact problem or type of road, or confirm that a repair was completed.</p>
+    </section>
+
+    <section class="content-panel" id="closure-time">
+      <h2>How long it took HRM to record a close date</h2>
+      <p>We convert report and close times to Halifax time, then count the days between the report date and the date HRM marked it closed. If both dates are the same, that is zero days.</p>
+      <p>“Half” is the estimated time by which HRM had recorded a close date for about half of the reports. “9 in 10” is the estimate for about nine in ten reports, when the data supports it. For reports without a close date, we count only the time up to the HRM data download date; we do not assume they have closed.</p>
+      <p>The estimates use the latest 12 full months shown on the page. We show a district estimate only when at least 30 reports are available. If there are fewer, the main answer uses All of HRM and explains why.</p>
+    </section>
+
+    <section class="content-panel" id="open-records">
+      <h2>Reports with no close date</h2>
+      <p>An HRM record has no close date if HRM's data does not show one as of the download date. Its age is the number of days since the report was made. We group these records by age: 0–7, 8–14, 15–30, and over 30 days.</p>
+      <p>An old record without a close date does not tell us whether the road problem is still there. The site shows the oldest age beside the number of records with no close date.</p>
+    </section>
+
+    <section class="content-panel" id="report-volume">
+      <h2>How report counts change by season</h2>
+      <p>We compare the average number of reports per month from December to March with April to November, using the same complete years. We leave out years that do not include all 12 months and the current month if it is not complete. A month with no reports still counts. The page shows which years and how many months are included.</p>
+      <p>These counts show when reports came in. They do not tell us how bad road conditions were, whether repairs were completed, or how much work crews did.</p>
+    </section>
+
+    <section class="content-panel" id="small-samples">
+      <h2>Why some district estimates are not shown</h2>
+      <p>We show a district estimate only when at least 30 reports fall in the 12-month period. With fewer reports, the page shows All of HRM's estimate and explains why.</p>
+    </section>
+
+    <section class="content-panel" id="district-places">
+      <h2>District place names and boundaries</h2>
+      <p>District names come from HRM's current <a href="https://www.halifax.ca/city-hall/districts-councillors" target="_blank" rel="noopener noreferrer">Districts and Councillors list</a>, checked 25 November 2026. Each report stays in the district code HRM recorded; we do not move older reports to today's boundaries. Since boundaries can change, counts over many years for one district code may cover different places. Use HRM's <a href="https://www.halifax.ca/city-hall/districts-councillors/district-look" target="_blank" rel="noopener noreferrer">District Look-up</a> to check your area. HRM may ask for your address; this site never receives it.</p>
+    </section>
+
+    <section class="content-panel" id="left-out">
+      <h2>What we left out and why</h2>
+      <p>The public files on this site contain totals only, not individual records. They leave out street addresses, coordinates, written comments, request IDs, names, email addresses, phone numbers, and other personal details.</p>
+      <p>The HRM data does not reliably link each report to the work done on the road. This site does not compare this broad category with HRM's pothole repair standard.</p>
+    </section>
+
+    <section class="content-panel" id="limits">
+      <h2>What the numbers can't tell you</h2>
+      <ul>
+        <li>They do not prove a road surface was repaired when a record was closed.</li>
+        <li>They do not show every road problem, its size, the cost, or residents' experience.</li>
+        <li>They cannot find an individual request or predict when one will close.</li>
+        <li>They describe HRM records and do not cover roads maintained by the Province.</li>
+      </ul>
+    </section>
+
+    <section class="content-panel" id="refresh">
+      <h2>When the data was downloaded</h2>
+      <p>HRM data was last downloaded on <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time>. We do not have a regular update schedule yet.</p>
+    </section>
+
+    <section class="content-panel" id="error">
+      <h2>How to report an error</h2>
+      <p>This preview does not have a public code page or a way to send feedback yet. A verified contact or issue link must be added before the site is published. Please do not include street addresses or personal details in an error report.</p>
+      <p><a href="{{BASE_PATH}}about-errors.html">About this project and how to report an error</a>.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner">
+    <p>HRM data downloaded on <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time>. This page does not update live.</p>
+    <p>Independent project using HRM's open data. Not run by HRM.</p>
+    <p class="license-line">Contains information licenced under the Open Government Licence—Halifax.</p>
+    <nav class="footer-links" aria-label="Footer links"><a href="{{BASE_PATH}}index.html">Home</a><a href="{{BASE_PATH}}whose-road.html">Whose road is this?</a><a href="{{BASE_PATH}}car-damage.html">Car damaged? What now?</a><a href="{{BASE_PATH}}about-errors.html">About this site</a></nav>
+    <p>This site uses no cookies and collects no addresses.</p>
+  </div></footer>
+</body>
+</html>

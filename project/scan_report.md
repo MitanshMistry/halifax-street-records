@@ -1,0 +1,814 @@
+# HRM full data scan report
+
+Summary counts only. Raw source rows remain in the ignored `data/raw/` cache.
+Text labels that appear free-text-like or sensitive are withheld.
+
+## Table row counts
+- service_requests: 489632
+- work_orders: 121849
+- wo_custom_fields: 468849
+- sr_custom_fields: 1192089
+
+## Service Requests
+- rows: 489632
+- DESCRIPTION: 101 distinct values across 489632 rows
+  - Illegally Parked Vehicle: 115280
+  - Trees: 35525
+  - ROW Signage: 25974
+  - Obstructions: 24459
+  - Traffic Signals: 17747
+  - Street Surface Maintenance: 17210
+  - ROW Lights: 12819
+  - Snow Damage: 10650
+  - ROW Litter: 10498
+  - Snow Operations - Non-Urgent: 10456
+  - Parks Litter: 8768
+  - Fuel Stations: 8539
+  - Parking Inquiries: 7746
+  - Traffic Inquiries: 7617
+  - [withheld value 015]: 7602
+  - Interior Incident  or Request: 6845
+  - Parks Inquiries: 6649
+  - Mechanical Other: 6532
+  - Deceased Animals: 6329
+  - Grass: 6278
+  - [withheld value 021]: 6227
+  - Snow Operations - Inquiries & Complaints: 6141
+  - Mail Out Request: 5883
+  - Exterior Incident Report: 5783
+  - Homeless Encampment: 4862
+  - [withheld value 026]: 4798
+  - Facilities Inquiries: 4747
+  - Street Sweeping: 4594
+  - Transit - Planning and Scheduling: 4575
+  - Walking Surface Maintenance: 4456
+  - Electrical Incident or Request: 4443
+  - Advertising in the Right of Way: 4212
+  - ROW Services General Inquiries: 4141
+  - Curb and/or Gutter Maintenance: 3711
+  - Facility Cleaning Request or Comment: 3579
+  - Capital Infrastructure Construction: 3471
+  - Street Sign Missing or Damaged: 3318
+  - Graffiti: 3296
+  - Pavement Markings: 2986
+  - Road Shoulder: 2507
+  - Transit - Access-A-Bus: 2406
+  - ROW Infrastructure Request: 2229
+  - Parks Infrastructure Requests: 2200
+  - Curbside Solid Waste: 1872
+  - Health and Life Safety Systems Issue: 1848
+  - Snow Operations - Urgent: 1836
+  - Flooding Requests: 1742
+  - Parking Tickets - Non Payment Related Issues: 1704
+  - Landscaping: 1615
+  - Transit - Marketing and Communications: 1583
+  - Utility Related Street Cuts and Trenches: 1535
+  - Parking Paystation: 1493
+  - Non-ROW Signage: 1448
+  - Encroachments: 1320
+  - Pest Control: 1306
+  - ROW Litter Bin: 1180
+  - Drainage Infrastructure Maintenance or Repair: 1172
+  - Facilities Snow Removal: 1130
+  - Drainage Infrastructure Request: 945
+  - Transit - Bus Operator Compliments: 885
+  - Bicycle Infrastructure: 881
+  - Transit - Programs: 881
+  - Driveway Install and Modification: 850
+  - Barrier Maintenance: 825
+  - Transit - Vehicle Related Complaints: 822
+  - [withheld value 066]: 803
+  - Barricades: 795
+  - [withheld value 068]: 772
+  - [withheld value 069]: 741
+  - Transportation Infrastructure Management: 696
+  - Community Clean Up / Adopt A Highway: 594
+  - Winter Flooding: 523
+  - Roof or Structure Incident Report: 480
+  - Pool Incident Reports: 476
+  - Transit - Policies: 459
+  - Transit - Technology: 435
+  - Road Operations Compliments and Complaints: 415
+  - Election Signs: 410
+  - Design: 408
+  - Parks Access: 406
+  - Winter Parking Ban: 404
+  - Civic Events: 376
+  - ROW Bench: 368
+  - IMO Tactical Mobility Repairs: 356
+  - Smoking Receptacle Maintenance: 355
+  - Street Closures: 355
+  - Transit - Ferries: 341
+  - Corporate Accommodations Request: 305
+  - Vehicles Obstructing Snow Operations: 280
+  - Designated Smoking Area Inquiries: 241
+  - Filming and Oversized Loads: 181
+  - Cemeteries: 166
+  - Quinpool Road Bridge Closure Inquiries: 154
+  - Ice Rink and Arena: 94
+  - Vehicle Immobilization: 87
+  - Smoking Enforcement: 83
+  - Transit - Accessibility on Conventional Bus: 57
+  - Survey Request/Ownership Boundary: 21
+  - Monument Clocks & Bells: 16
+  - [withheld value 100]: 15
+  - Icicles: 3
+  - 7 value label(s) withheld for privacy.
+- REQUEST_CATEGORY: 20 distinct values across 489632 rows
+  - PARKING: 126593
+  - ROWMAINTENANCE: 103108
+  - TRAFFICMAINTENANCE: 62815
+  - ROWSERVICES: 62568
+  - FACILITYMAINTENANCE: 39411
+  - PARKMAINTENANCE: 24884
+  - FAMSERVICES: 14422
+  - TRANSIT: 12414
+  - PARKSERVICES: 11830
+  - FACILITYSERVICES: 9945
+  - TRAFFICSERVICES: 6249
+  - COMMUNITYSAFETY: 4860
+  - DANDCSERVICES: 4613
+  - COMPLIANCE: 3273
+  - ASSETREQUEST: 2229
+  - RECSERVICES: 375
+  - (blank): 37
+  - OTHERSERVICES: 3
+  - [withheld value 019]: 2
+  - [withheld value 020]: 1
+  - 2 value label(s) withheld for privacy.
+- PRIORITY: 5 distinct values across 489632 rows
+  - 4: 236962
+  - 3: 146197
+  - 2: 79349
+  - 1: 25719
+  - (blank): 1405
+- STATUS: 4 distinct values across 489632 rows
+  - CLOSED: 486454
+  - OPEN: 2665
+  - PROCESSING: 299
+  - HOLD: 214
+- DEPT_RESPONSIBILITY: 66 distinct values across 489632 rows
+  - PW: 346032
+  - PFE: 49899
+  - PARKS: 40326
+  - (blank): 25373
+  - Finance and Asset Management: 14206
+  - Planning and Development: 7644
+  - CS: 1517
+  - Other: 1063
+  - Service Delivery & Asset Management: 906
+  - Halifax Transit: 527
+  - Parks Administration: 287
+  - Parks: 281
+  - ND: 217
+  - Road Operations: 189
+  - Construction Ser: 172
+  - [withheld value 016]: 142
+  - 311 Contact Centre: 103
+  - Used for Grants and MLSER only: 101
+  - Transit: 100
+  - No department selected: 73
+  - Rights of Way Approval: 58
+  - SITP: 57
+  - Citizen Contact Centres: 43
+  - Transportation Serv.: 31
+  - Intergovernmental affairs: 29
+  - StrategicTransportation Planning: 23
+  - HR: 21
+  - Real Estate: 20
+  - Facilities Maintenance: 19
+  - Traffic Management: 18
+  - Parking Management: 15
+  - Parking Services: 15
+  - Facilities Admin: 14
+  - Parks Urban Forestry: 14
+  - P & R Support for Homelessness: 12
+  - Streets & Roads West: 12
+  - Ticket Office: 9
+  - Asset Control & Service Delivery: 6
+  - Enhanced Maintenance Area: 6
+  - LLS: 5
+  - Trials & Open Spaces: 5
+  - Streetlighting: 4
+  - Sportsfields West: 3
+  - Traffic Maintenance: 3
+  - [withheld value 045]: 2
+  - [withheld value 046]: 2
+  - [withheld value 047]: 2
+  - [withheld value 048]: 2
+  - [withheld value 049]: 2
+  - [withheld value 050]: 2
+  - [withheld value 051]: 2
+  - [withheld value 052]: 2
+  - [withheld value 053]: 2
+  - [withheld value 054]: 2
+  - [withheld value 055]: 1
+  - [withheld value 056]: 1
+  - [withheld value 057]: 1
+  - [withheld value 058]: 1
+  - [withheld value 059]: 1
+  - [withheld value 060]: 1
+  - [withheld value 061]: 1
+  - [withheld value 062]: 1
+  - [withheld value 063]: 1
+  - [withheld value 064]: 1
+  - [withheld value 065]: 1
+  - [withheld value 066]: 1
+  - 23 value label(s) withheld for privacy.
+
+### Dates (converted to Halifax time)
+- DATE_INITIATED range (Halifax time): 1969-12-31 to 2026-11-20; missing or invalid: 0 (0 invalid); nonpositive source timestamps: 4; before 2010: 5; after pull date: 0
+- DATE_CLOSED range (Halifax time): 2017-07-28 to 2026-11-20; missing or invalid: 3178 (0 invalid); nonpositive source timestamps: 0; before 2010: 0; after pull date: 0
+
+### Service Requests date quality
+- Open by missing close date: 3178; closed date present: 486454
+- Missing or invalid close dates: 3178; invalid nonblank dates: 0
+- Closed before opened: 47
+- By year opened (open / closed / missing close date):
+  - 1969: 0 / 5 / 0
+  - 2017: 1 / 12481 / 1
+  - 2018: 0 / 32364 / 0
+  - 2019: 0 / 36560 / 0
+  - 2020: 10 / 41673 / 10
+  - 2021: 59 / 54896 / 59
+  - 2022: 33 / 60331 / 33
+  - 2023: 48 / 56442 / 48
+  - 2024: 238 / 62449 / 238
+  - 2025: 677 / 68185 / 677
+  - 2026: 2112 / 61068 / 2112
+
+- REQUEST_ID: 0 IDs duplicated; 0 extra rows; 0 missing IDs
+
+### Request-to-work-order link test
+- WORK_ORDER: 2 distinct values across 489632 rows
+  - N: 428486
+  - Y: 61146
+- Requests with a nonblank WORK_ORDER value other than N: 61146
+- Requests with blank WORK_ORDER: 0
+- Requests with an ID-like numeric token: 0
+- Distinct ID-like tokens in request rows: 0
+- Distinct work order IDs found in request values: 0
+- Request rows containing a work order ID match: 0
+
+### Service Request Custom Fields work-order link test
+- Rows in reference-like custom fields: 0
+- Rows with an ID-like numeric token: 0
+- Distinct ID-like tokens: 0
+- Work order IDs matched: 0 across 0 rows
+
+- Distinct DISTRICT values per year opened (Service Requests):
+  - 1969: 4 distinct — (blank), 10, 7, 8
+  - 2017: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2018: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2019: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2020: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2021: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2022: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2023: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2024: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2025: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2026: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+
+- INITIATED_BY category check:
+  - distinct nonblank values: 3
+  - only known category labels (INTERNAL / 311 ONLINE / RESPOND): yes
+  - 311 ONLINE: 44556
+  - INTERNAL: 419903
+  - RESPOND: 25173
+
+## Work Orders
+- rows: 121849
+- ASSET_TYPE: 15 distinct values across 121849 rows
+  - TRN_STREET: 55759
+  - AST_TREE: 42471
+  - TRN_SECTRAV: 15226
+  - LITTER FEATURES: 3966
+  - ROC SERVICES: 2240
+  - AST_BARRIER: 966
+  - TRN_BRIDGE: 477
+  - TRN_GUIDE_RAIL: 385
+  - AST_BIKE_FEATURE: 253
+  - LND_HRM_PARCEL: 60
+  - STEP FEATURES: 34
+  - STEPS: 8
+  - [withheld value 013]: 2
+  - [withheld value 014]: 1
+  - [withheld value 015]: 1
+  - 3 value label(s) withheld for privacy.
+- ASSET_GROUP: 5 distinct values across 121849 rows
+  - Right of Way: 72100
+  - Land Improvements: 47433
+  - Services: 2242
+  - Land: 60
+  - Buildings: 14
+- DESCRIPTION: 129 distinct values across 121849 rows
+  - Street - Pothole Repairs: 26989
+  - Tree - Pruning and Trimming: 13383
+  - Tree - Removal: 9552
+  - Tree - Replacement: 5583
+  - Tree - Chipping and Brush Removal: 5481
+  - Road Shoulder - Washout Repairs: 5230
+  - Tree - Stump Removal: 4354
+  - Unclassified Work Order from WOOD Sidewalk Audit: 3953
+  - Road Shoulder - Maintenance: 3309
+  - Street Sweeping - Mechanical: 2187
+  - Tree - New Planting: 2130
+  - Concrete Curb Repair: 2123
+  - Litter Bin Emptying and Pickup: 2011
+  - Concrete Sidewalk - Slab Replacement: 2010
+  - Concrete Sidewalk - Concrete Patching: 1893
+  - Graffiti Removal: 1807
+  - Street - Sinkhole Repair: 1734
+  - Concrete Sidewalk - Grinding: 1647
+  - Asphalt Crosswalk - Asphalt Repair: 1393
+  - ROW Vegetation Maintenance - Streets: 1353
+  - Street - Skin Patch: 1260
+  - Concrete Sidewalk - Asphalt Repair: 1225
+  - Gravel Road - Grading: 1178
+  - Asphalt Repairs - Miscellaneous: 1091
+  - Street - Spreader Patch: 1000
+  - ROW Landscaping: 960
+  - Concrete Curb Asphalt Patching: 870
+  - Tree - Trunk Work: 869
+  - Other Street Maintenance: 835
+  - Tree - Assessment: 744
+  - Ramp - Concrete Repair: 658
+  - [withheld value 032]: 610
+  - Road Shoulder - Grading: 562
+  - Litter Pickup (Manual): 524
+  - Litter Bin Repair and Maintenance: 511
+  - StS Walkway Repair - Asphalt: 414
+  - Litter Bin Installation (new): 402
+  - Asphalt Curb - Repair: 385
+  - Guiderail Repair and Maintenance: 385
+  - Snow Damage Repairs - Sods: 370
+  - Street - Driveway Lip Maintenance: 366
+  - Concrete Sidewalk - Heat Heaves - Slab Replacement: 340
+  - Concrete Curb Concrete Patching: 339
+  - Street Sweeping - Hand: 334
+  - Street - Drainage and Water Flow Work: 323
+  - Flail Mowing: 320
+  - Street - Miscellaneous: 301
+  - Tree - Stakes and Sodding: 291
+  - Brick Sidewalk - Brick Repair: 289
+  - Catch Basin or Drain - Clearing: 287
+  - Street - Cut and Patch: 286
+  - Retaining Wall - Repair and Maintenance: 281
+  - Smoking Receptacle Replacement: 272
+  - Asphalt Sidewalk - Asphalt Repair: 270
+  - Street - Settled Trench Repair: 264
+  - Fence - Repair and Maintenance: 260
+  - Street - Asphalt or Swale Water Diversion: 256
+  - Secondary Travelway Maintenance: 233
+  - Litter Pickup - Illegal Dumping: 213
+  - Smoking Receptacle Maintenance: 204
+  - Barrier - Repair: 189
+  - Gravel Road - Maintenance: 186
+  - Gravel Road - Dust Control: 159
+  - Bridge Repair - Miscellaneous: 149
+  - Ditch Maintenance: 144
+  - Bike Rack and Repair Station Maintenance: 140
+  - Bridge Patching - Asphalt: 125
+  - Snow Damage Repairs - Asphalt: 112
+  - Street - Miscellaneous Services: 112
+  - Bike Lane Asphalt Maintenance: 106
+  - Unclassified Work Order from Curb Audit: 104
+  - Bridge Repair - Guide Rail or Bridge Approach: 98
+  - Bike Rack install: 94
+  - Concrete Sidewalk - Foam Levelling of Slabs: 73
+  - Concrete Sidewalk - Miscellaneous: 72
+  - Concrete Curb Heat Heave Repair: 67
+  - Barrier Installation: 64
+  - Tree - Miscellaneous: 64
+  - Street - Asphalt Patch to Divert Water: 60
+  - Concrete Curb Grinding: 59
+  - Gravel Road - Washout Base Repairs: 55
+  - Railing - Maintenance: 55
+  - Street - Asphalt Planer Patch Repair: 53
+  - Catch Basin or Drain - Maintenance: 52
+  - Corridor Widening - Vegetation: 50
+  - Bridge Repair - Asphalt Patch: 46
+  - StS Walkway Repair - Other: 44
+  - Steps - Repair: 42
+  - Snow Clearing: 41
+  - Multi-Use Pathway - Repairs: 39
+  - StS Walkway Repair - Gravel: 31
+  - Precast Concrete Curb - PCC Repair: 30
+  - Snow Damage Repairs - Miscellaneous: 29
+  - Delineator - Repair: 27
+  - Drainage Water Flow Work: 27
+  - Unclassified Hazard from WOOD Sidewalk Audit: 26
+  - Landscape Surface Repair: 24
+  - Bridge Repair - Rail: 21
+  - Designated Smoking Area Receptacle Maintenance (ROW): 21
+  - Ditch Hand Cleaning: 21
+  - Smoking Receptacle Installation: 21
+  - Urban Forestry Storm Response: 21
+  - Bike Rack removal: 19
+  - Barrier Removal: 17
+  - Snow Damage Repairs - Concrete: 16
+  - Street - Flooding Control: 15
+  - Barrier Winter Works: 13
+  - Bridge Repair - Concrete: 13
+  - Bollard - Repair: 12
+  - Street - Minor Repairs: 12
+  - Bridge - Washing and Flushing: 10
+  - StS Walkway Repair - Wooden: 8
+  - Bollard - Installation: 7
+  - Culvert - Repair: 6
+  - Bridge Repair - Timber Miscellany: 5
+  - Leaf Collection: 5
+  - Bridge Repair - Timber: 4
+  - Catch Basin blockage: 4
+  - Retaining Wall - Removal: 4
+  - Yard Work and Cleanup: 4
+  - Delineator - Installation: 3
+  - Rodent/Pest Control: 3
+  - Swale Installation: 3
+  - [withheld value 124]: 2
+  - [withheld value 125]: 2
+  - [withheld value 126]: 2
+  - [withheld value 127]: 1
+  - [withheld value 128]: 1
+  - [withheld value 129]: 1
+  - 7 value label(s) withheld for privacy.
+- PRIORITY: 4 distinct values across 121849 rows
+  - Low: 65350
+  - High: 34873
+  - Medium: 21531
+  - Critical: 95
+- STATUS: 11 distinct values across 121849 rows
+  - CLOSED: 81548
+  - COMPLETE: 25359
+  - REVIEWED: 7304
+  - OPEN: 5100
+  - HOLD: 1089
+  - ASSIGNED: 1050
+  - INVOICE: 222
+  - APPROVED: 159
+  - Complete: 12
+  - ESTIMATE: 4
+  - (blank): 2
+- STREET_CLASSIFICATION: 7 distinct values across 121849 rows
+  - LOCAL STREET: 63845
+  - ARTERIAL: 17490
+  - MINOR COLLECTOR: 16021
+  - MAJOR COLLECTOR: 15412
+  - (blank): 8983
+  - EXPRESSWAY: 91
+  - FREEWAY: 7
+
+### Dates (converted to Halifax time)
+- DATE_INITIATED range (Halifax time): 2017-07-18 to 2029-09-29; missing or invalid: 0 (0 invalid); nonpositive source timestamps: 0; before 2010: 0; after pull date: 8
+- ACTUAL_START_DATE range (Halifax time): 1917-07-20 to 2026-11-19; missing or invalid: 17736 (0 invalid); nonpositive source timestamps: 11; before 2010: 14; after pull date: 0
+- ACTUAL_FINISH_DATE range (Halifax time): 2015-04-01 to 2026-11-19; missing or invalid: 14920 (0 invalid); nonpositive source timestamps: 0; before 2010: 0; after pull date: 0
+- ACTUAL_FINISH_DATE before DATE_INITIATED: 6261
+
+- Distinct DISTRICT values per year opened (Work Orders):
+  - 2017: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2018: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2019: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2020: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2021: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2022: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2023: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2024: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2025: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2026: 17 distinct — (blank), 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9
+  - 2027: 1 distinct — 16
+  - 2028: 3 distinct — 12, 6, 9
+  - 2029: 2 distinct — 12, 14
+
+- WORK_ORDER_ID: 0 IDs duplicated; 0 extra rows; 0 missing IDs
+
+## Work Orders Custom Fields
+- rows: 468849
+- ISSUE_CATEGORY: 7 distinct values across 468849 rows
+  - [withheld value 001]: 117212
+  - [withheld value 002]: 90665
+  - [withheld value 003]: 90665
+  - [withheld value 004]: 90665
+  - [withheld value 005]: 26548
+  - [withheld value 006]: 26547
+  - [withheld value 007]: 26547
+  - 7 value label(s) withheld for privacy.
+  - Field looks free-text-like; all value labels are withheld.
+- ISSUE_OUTCOME: 180560 nonblank values
+- Size/depth and ID pattern scan (counts only):
+  - field-name/category values matching size/depth terms: 0
+  - field-name/category values mentioning ID: 0
+  - values matching size/depth terms: 0
+  - values matching ID-like patterns: 0
+
+## Service Requests Custom Fields
+- rows: 1192089
+- CUSTOM_FIELD_NAME: 88 distinct values across 1192089 rows
+  - Alleged Violation: 115199
+  - Property Ownership: 115199
+  - Vehicle Make: 115199
+  - Vehicle Model: 115199
+  - Vehicle Was Towed: 115199
+  - Vehicle Colour: 115198
+  - Vehicle Province: 115198
+  - Building: 28238
+  - Dispatch Confirmation: 22974
+  - Sidewalk Route: 22974
+  - Snow Clearing Contractor: 22974
+  - Sidewalk Route (19/20): 20508
+  - Snow Route (19/20): 20508
+  - Snow Route (18/19): 20462
+  - Request Category: 19658
+  - Service Provider: 19658
+  - Snow Priority: 19658
+  - Type of Litter/Issue: 19265
+  - Sidewalk Route (2022/2023): 11461
+  - Snow Route (2022/2023): 11461
+  - SubCategory: 9064
+  - Classification: 8774
+  - Animal Type: 6328
+  - Grass Contractor: 6276
+  - Grass Responsibility: 6276
+  - Outcome: 6276
+  - Quality Checked: 6276
+  - Document Requested: 5883
+  - [withheld value 029]: 5421
+  - [withheld value 030]: 4840
+  - [withheld value 031]: 4542
+  - [withheld value 032]: 4542
+  - Service Days: 4542
+  - Time of Day (Schedule Related): 4542
+  - Date/Time of Incident: 4511
+  - Grass Type: 3974
+  - Reason for Call: 3621
+  - Service Issue: 2655
+  - Snow Route: 2512
+  - Marketing & Communication: 1586
+  - [withheld value 041]: 1440
+  - Route: 885
+  - Accessible Taxi Program: 878
+  - Affordable Access Transit Pass: 878
+  - Approval Status (Transit Use): 878
+  - [withheld value 046]: 878
+  - Other: 878
+  - Free Transit Service: 820
+  - Community Services (DCS) Pass: 709
+  - Discounted School Board Passes: 709
+  - Discounted Tickets -Non-Profit: 709
+  - EPass: 709
+  - Guaranteed Ride: 709
+  - Rural Transit Funding: 709
+  - Smart Cycle: 709
+  - Smart Ride: 709
+  - Student Pass Pilot Program: 709
+  - Ticket Donations Requests: 709
+  - Travel Training & Education: 709
+  - UPass: 709
+  - Welcomed in Halifax (WH): 709
+  - Species: 699
+  - Event Transit Pass Program: 693
+  - Terminal/Park & Ride: 437
+  - Urgency of Call: 435
+  - Access Issue: 408
+  - Project Type: 402
+  - [withheld value 068]: 356
+  - Direction of Travel: 341
+  - Ferry Name: 341
+  - Discounted Bulk Transit Ticket: 338
+  - Discounted HRCE School Board P: 169
+  - DOSD Community Bus Pass Progra: 169
+  - EPass Program: 169
+  - Guaranteed Ride Program: 169
+  - Rural Transit Funding Program: 169
+  - Smart Cycle Program: 169
+  - Smart Ride Program: 169
+  - Student Transit Pass Program: 169
+  - Ticket Donation Requests: 169
+  - Travel Training Program: 169
+  - UPass Program: 169
+  - Welcomed in Halifax (WIH) Prog: 169
+  - Smoking Location: 83
+  - Smoking Type: 83
+  - Free Transit -Event Volunteers: 58
+  - [withheld value 087]: 2
+  - [withheld value 088]: 2
+  - 9 value label(s) withheld for privacy.
+- CUSTOM_FIELD_VALUE: 878768 nonblank values
+- Size/depth and ID pattern scan (counts only):
+  - field-name/category values matching size/depth terms: 2464
+  - field-name/category values mentioning ID: 1440
+  - values matching size/depth terms: 4619
+  - values matching ID-like patterns: 7
+
+## Request-type qualification gate
+- Threshold: at least 300 requests across at least 2 calendar years.
+- DESCRIPTION: 88 qualifying value(s)
+  - Illegally Parked Vehicle: 115280 requests across 7 calendar years
+  - Trees: 35525 requests across 10 calendar years
+  - ROW Signage: 25974 requests across 10 calendar years
+  - Obstructions: 24459 requests across 10 calendar years
+  - Traffic Signals: 17747 requests across 10 calendar years
+  - Street Surface Maintenance: 17210 requests across 10 calendar years
+  - ROW Lights: 12819 requests across 11 calendar years
+  - Snow Damage: 10650 requests across 10 calendar years
+  - ROW Litter: 10498 requests across 10 calendar years
+  - Snow Operations - Non-Urgent: 10456 requests across 7 calendar years
+  - Parks Litter: 8768 requests across 10 calendar years
+  - Fuel Stations: 8539 requests across 11 calendar years
+  - Parking Inquiries: 7746 requests across 8 calendar years
+  - Traffic Inquiries: 7617 requests across 10 calendar years
+  - [withheld qualifying value 015]: 7602 requests across 10 calendar years
+  - Interior Incident  or Request: 6845 requests across 10 calendar years
+  - Parks Inquiries: 6649 requests across 10 calendar years
+  - Mechanical Other: 6532 requests across 10 calendar years
+  - Deceased Animals: 6329 requests across 8 calendar years
+  - Grass: 6278 requests across 10 calendar years
+  - [withheld qualifying value 021]: 6227 requests across 10 calendar years
+  - Snow Operations - Inquiries & Complaints: 6141 requests across 10 calendar years
+  - Mail Out Request: 5883 requests across 5 calendar years
+  - Exterior Incident Report: 5783 requests across 10 calendar years
+  - Homeless Encampment: 4862 requests across 6 calendar years
+  - [withheld qualifying value 026]: 4798 requests across 10 calendar years
+  - Facilities Inquiries: 4747 requests across 10 calendar years
+  - Street Sweeping: 4594 requests across 10 calendar years
+  - Transit - Planning and Scheduling: 4575 requests across 5 calendar years
+  - Walking Surface Maintenance: 4456 requests across 10 calendar years
+  - Electrical Incident or Request: 4443 requests across 10 calendar years
+  - Advertising in the Right of Way: 4212 requests across 11 calendar years
+  - ROW Services General Inquiries: 4141 requests across 10 calendar years
+  - Curb and/or Gutter Maintenance: 3711 requests across 10 calendar years
+  - Facility Cleaning Request or Comment: 3579 requests across 10 calendar years
+  - Capital Infrastructure Construction: 3471 requests across 6 calendar years
+  - Street Sign Missing or Damaged: 3318 requests across 10 calendar years
+  - Graffiti: 3296 requests across 10 calendar years
+  - Pavement Markings: 2986 requests across 10 calendar years
+  - Road Shoulder: 2507 requests across 10 calendar years
+  - Transit - Access-A-Bus: 2406 requests across 5 calendar years
+  - ROW Infrastructure Request: 2229 requests across 10 calendar years
+  - Parks Infrastructure Requests: 2200 requests across 10 calendar years
+  - Curbside Solid Waste: 1872 requests across 5 calendar years
+  - Health and Life Safety Systems Issue: 1848 requests across 10 calendar years
+  - Snow Operations - Urgent: 1836 requests across 7 calendar years
+  - Flooding Requests: 1742 requests across 7 calendar years
+  - Parking Tickets - Non Payment Related Issues: 1704 requests across 6 calendar years
+  - Landscaping: 1615 requests across 10 calendar years
+  - Transit - Marketing and Communications: 1583 requests across 5 calendar years
+  - Utility Related Street Cuts and Trenches: 1535 requests across 9 calendar years
+  - Parking Paystation: 1493 requests across 7 calendar years
+  - Non-ROW Signage: 1448 requests across 9 calendar years
+  - Encroachments: 1320 requests across 7 calendar years
+  - Pest Control: 1306 requests across 10 calendar years
+  - ROW Litter Bin: 1180 requests across 9 calendar years
+  - Drainage Infrastructure Maintenance or Repair: 1172 requests across 9 calendar years
+  - Facilities Snow Removal: 1130 requests across 10 calendar years
+  - Drainage Infrastructure Request: 945 requests across 10 calendar years
+  - Transit - Bus Operator Compliments: 885 requests across 4 calendar years
+  - Bicycle Infrastructure: 881 requests across 10 calendar years
+  - Transit - Programs: 881 requests across 5 calendar years
+  - Driveway Install and Modification: 850 requests across 5 calendar years
+  - Barrier Maintenance: 825 requests across 10 calendar years
+  - Transit - Vehicle Related Complaints: 822 requests across 5 calendar years
+  - [withheld qualifying value 066]: 803 requests across 10 calendar years
+  - Barricades: 795 requests across 10 calendar years
+  - [withheld qualifying value 068]: 772 requests across 7 calendar years
+  - [withheld qualifying value 069]: 741 requests across 10 calendar years
+  - Transportation Infrastructure Management: 696 requests across 4 calendar years
+  - Community Clean Up / Adopt A Highway: 594 requests across 8 calendar years
+  - Winter Flooding: 523 requests across 4 calendar years
+  - Roof or Structure Incident Report: 480 requests across 10 calendar years
+  - Pool Incident Reports: 476 requests across 10 calendar years
+  - Transit - Policies: 459 requests across 5 calendar years
+  - Transit - Technology: 435 requests across 5 calendar years
+  - Road Operations Compliments and Complaints: 415 requests across 6 calendar years
+  - Election Signs: 410 requests across 8 calendar years
+  - Design: 408 requests across 5 calendar years
+  - Parks Access: 406 requests across 8 calendar years
+  - Winter Parking Ban: 404 requests across 6 calendar years
+  - Civic Events: 376 requests across 10 calendar years
+  - ROW Bench: 368 requests across 9 calendar years
+  - IMO Tactical Mobility Repairs: 356 requests across 5 calendar years
+  - Smoking Receptacle Maintenance: 355 requests across 9 calendar years
+  - Street Closures: 355 requests across 4 calendar years
+  - Transit - Ferries: 341 requests across 5 calendar years
+  - Corporate Accommodations Request: 305 requests across 7 calendar years
+- REQUEST_CATEGORY: 16 qualifying value(s)
+  - PARKING: 126593 requests across 10 calendar years
+  - ROWMAINTENANCE: 103108 requests across 10 calendar years
+  - TRAFFICMAINTENANCE: 62815 requests across 11 calendar years
+  - ROWSERVICES: 62568 requests across 11 calendar years
+  - FACILITYMAINTENANCE: 39411 requests across 10 calendar years
+  - PARKMAINTENANCE: 24884 requests across 10 calendar years
+  - FAMSERVICES: 14422 requests across 11 calendar years
+  - TRANSIT: 12414 requests across 5 calendar years
+  - PARKSERVICES: 11830 requests across 11 calendar years
+  - FACILITYSERVICES: 9945 requests across 10 calendar years
+  - TRAFFICSERVICES: 6249 requests across 10 calendar years
+  - COMMUNITYSAFETY: 4860 requests across 6 calendar years
+  - DANDCSERVICES: 4613 requests across 6 calendar years
+  - COMPLIANCE: 3273 requests across 7 calendar years
+  - ASSETREQUEST: 2229 requests across 10 calendar years
+  - RECSERVICES: 375 requests across 10 calendar years
+- Stage 1 outcome: B — no pothole-labelled request type qualifies; use Street Surface Maintenance and label it street surface repair requests.
+
+## Selected request type: custom-field validation
+- Selected description: Street Surface Maintenance
+- Selected request rows: 17210; distinct request IDs: 17210
+- Matching custom-field rows: 0
+- No matching custom-field rows; size/depth or pothole narrowing cannot be tested.
+
+## Keyword scan
+- Per-term keyword row counts (counts may overlap):
+  - service_requests.DESCRIPTION / surface: 21666 rows; 2 distinct value(s)
+  - work_orders.DESCRIPTION / pothole: 26989 rows; 1 distinct value(s)
+  - work_orders.DESCRIPTION / surface: 24 rows; 1 distinct value(s)
+  - work_orders.DESCRIPTION / sinkhole: 1734 rows; 1 distinct value(s)
+  - work_orders.DESCRIPTION / patch: 5932 rows; 10 distinct value(s)
+  - work_orders.DESCRIPTION / asphalt: 6406 rows; 14 distinct value(s)
+  - work_orders.UNIT / patch: 201 rows; 1 distinct value(s)
+  - work_orders.PROJECT_NAME / pothole: 200 rows; 5 distinct value(s)
+  - work_orders.PROJECT_NAME / asphalt: 1797 rows; 26 distinct value(s)
+  - sr_custom_fields.CUSTOM_FIELD_NAME / patch: 22974 rows; 1 distinct value(s)
+  - sr_custom_fields.CUSTOM_FIELD_VALUE / patch: 21032 rows; 9 distinct value(s)
+  - sr_custom_fields.CUSTOM_FIELD_VALUE / asphalt: 3 rows; 2 distinct value(s)
+
+### service_requests: keyword matches
+- DESCRIPTION: 21666 matching rows; 2 distinct matching value(s)
+  - Street Surface Maintenance: 17210
+  - Walking Surface Maintenance: 4456
+
+### work_orders: keyword matches
+- DESCRIPTION: 39931 matching rows; 22 distinct matching value(s)
+  - Street - Pothole Repairs: 26989
+  - Concrete Sidewalk - Concrete Patching: 1893
+  - Street - Sinkhole Repair: 1734
+  - Asphalt Crosswalk - Asphalt Repair: 1393
+  - Street - Skin Patch: 1260
+  - Concrete Sidewalk - Asphalt Repair: 1225
+  - Asphalt Repairs - Miscellaneous: 1091
+  - Street - Spreader Patch: 1000
+  - Concrete Curb Asphalt Patching: 870
+  - StS Walkway Repair - Asphalt: 414
+  - Asphalt Curb - Repair: 385
+  - Concrete Curb Concrete Patching: 339
+  - Street - Cut and Patch: 286
+  - Asphalt Sidewalk - Asphalt Repair: 270
+  - Street - Asphalt or Swale Water Diversion: 256
+  - Bridge Patching - Asphalt: 125
+  - Snow Damage Repairs - Asphalt: 112
+  - Bike Lane Asphalt Maintenance: 106
+  - Street - Asphalt Patch to Divert Water: 60
+  - Street - Asphalt Planer Patch Repair: 53
+  - Bridge Repair - Asphalt Patch: 46
+  - Landscape Surface Repair: 24
+- UNIT: 201 matching rows; 1 distinct matching value(s)
+  - PATCH: 201
+- PROJECT_NAME: 1997 matching rows; 31 distinct matching value(s)
+  - [withheld value 001]: 199
+  - [withheld value 002]: 158
+  - [withheld value 003]: 123
+  - [withheld value 004]: 120
+  - [withheld value 005]: 115
+  - [withheld value 006]: 104
+  - [withheld value 007]: 98
+  - [withheld value 008]: 97
+  - [withheld value 009]: 91
+  - [withheld value 010]: 81
+  - [withheld value 011]: 76
+  - [withheld value 012]: 70
+  - [withheld value 013]: 67
+  - [withheld value 014]: 65
+  - [withheld value 015]: 61
+  - [withheld value 016]: 60
+  - [withheld value 017]: 51
+  - [withheld value 018]: 46
+  - [withheld value 019]: 44
+  - [withheld value 020]: 38
+  - [withheld value 021]: 26
+  - [withheld value 022]: 26
+  - [withheld value 023]: 26
+  - [withheld value 024]: 25
+  - [withheld value 025]: 25
+  - [withheld value 026]: 21
+  - [withheld value 027]: 21
+  - [withheld value 028]: 19
+  - [withheld value 029]: 18
+  - [withheld value 030]: 14
+  - [withheld value 031]: 12
+
+### wo_custom_fields: keyword matches
+- No matches found in non-private text fields.
+
+### sr_custom_fields: keyword matches
+- CUSTOM_FIELD_NAME: 22974 matching rows; 1 distinct matching value(s)
+  - Dispatch Confirmation: 22974
+- CUSTOM_FIELD_VALUE: 21035 matching rows; 11 distinct matching value(s)
+  - [withheld value 001]: 10088
+  - [withheld value 002]: 2417
+  - [withheld value 003]: 2383
+  - [withheld value 004]: 1819
+  - [withheld value 005]: 1403
+  - [withheld value 006]: 1236
+  - [withheld value 007]: 1080
+  - [withheld value 008]: 499
+  - [withheld value 009]: 107
+  - [withheld value 010]: 2
+  - [withheld value 011]: 1

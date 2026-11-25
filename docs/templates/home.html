@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="icon" href="{{BASE_PATH}}favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="{{BASE_PATH}}css/style.css">
+  <script defer src="{{BASE_PATH}}js/site.js"></script>
+</head>
+<body class="no-js" data-base-path="{{BASE_PATH}}" data-selected-district="{{SELECTED_DISTRICT}}" data-pull-date="{{PULL_DATE}}" data-stale-days="180">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="stale-banner" id="stale-banner" role="status" hidden>
+    HRM data on this page is from <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time> and may be out of date.
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="{{BASE_PATH}}index.html">
+        <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true">
+          <path d="M8 2 5 10l3 5-2 11M20 2l3 8-3 5 2 11M14 3v5m0 5v4m0 5v3" />
+        </svg>
+        <span class="brand-copy">
+          <span class="brand-name">Halifax Street Records</span>
+          <small class="brand-tagline">Past reports about road-surface problems, when HRM marked them closed, and where to report an issue.</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{BASE_PATH}}index.html">Home</a>
+        <a href="{{BASE_PATH}}index.html#guides">Guides</a>
+        <a href="{{BASE_PATH}}about.html">About the estimates</a>
+        <a class="external-nav" href="https://www.halifax.ca/transportation/streets-sidewalks/paving-repair/report-a-pothole" target="_blank" rel="noopener noreferrer" aria-label="Report a pothole to HRM (opens halifax.ca in a new tab)">
+          <span>Report a pothole</span><small>opens halifax.ca</small>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-shell">
+    <section class="hero-grid" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow page-context">{{PAGE_CONTEXT}}</p>
+        <h1 id="page-title">{{PAGE_HEADING}}</h1>
+        <form class="district-form" id="district-form">
+          <label for="district-picker">Your HRM district</label>
+          <div class="picker-control">
+            <select id="district-picker" name="district" disabled>
+              {{DISTRICT_OPTIONS}}
+            </select>
+            <button type="submit" id="district-submit" disabled hidden>See results</button>
+          </div>
+          <p class="picker-status" id="district-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      {{ANSWER_CARD}}
+    </section>
+    <p class="picker-help">{{PICKER_HELP}}</p>
+    <noscript>
+      <p class="no-script-note">{{NOSCRIPT_NOTE}}</p>
+    </noscript>
+
+    <section class="meaning-section" aria-label="Understanding the answer">
+      {{MEANING_DETAILS}}
+    </section>
+
+    <p class="scope-note">HRM’s “Street Surface Maintenance” category covers more than potholes. This site shows past records; it cannot look up an individual report.</p>
+
+    <section class="compare-panel js-only" aria-labelledby="compare-heading">
+      <div class="compare-copy">
+        <p class="eyebrow">Past reports, not a prediction</p>
+        <h2 id="compare-heading">Compare your wait with past reports</h2>
+        <p>Enter the number of days since you reported. This compares your wait with past records; it cannot predict what will happen to your report.</p>
+      </div>
+      <form class="compare-form" id="compare-form" novalidate>
+        <label for="days-waiting">Days since I reported</label>
+        <div class="compare-controls">
+          <input id="days-waiting" name="days" type="number" min="0" max="3650" step="1" inputmode="numeric">
+          <button type="submit" class="button button-outline">Compare</button>
+        </div>
+        <p class="compare-result" id="compare-result" role="status" aria-live="polite"></p>
+        <p class="small-note">Nothing you enter is saved or sent.</p>
+      </form>
+    </section>
+
+    {{OPEN_SECTION}}
+    {{VOLUME_SECTION}}
+    {{DISTRICT_DIRECTORY}}
+
+    <section class="guides-section" id="guides" aria-labelledby="guides-heading">
+      <p class="eyebrow">Practical next steps</p>
+      <h2 id="guides-heading">Guides</h2>
+      <div class="guide-links">
+        <a class="button button-primary" href="https://www.halifax.ca/transportation/streets-sidewalks/paving-repair/report-a-pothole" target="_blank" rel="noopener noreferrer">
+          Report a pothole to HRM <span class="opens-label">opens halifax.ca</span>
+        </a>
+        <a class="button button-outline" href="{{BASE_PATH}}whose-road.html">Whose road is this?</a>
+        <a class="button button-outline" href="{{BASE_PATH}}car-damage.html">Car damaged? What now?</a>
+      </div>
+    </section>
+
+    <section class="limits-panel" aria-labelledby="limits-heading">
+      <p class="eyebrow">Limits</p>
+      <h2 id="limits-heading">What this can't tell you</h2>
+      <ul>
+        <li>This shows when HRM's record was marked closed. The work may have been done earlier or later.</li>
+        <li>It does not show how large a problem was, what it cost, or whether residents were satisfied.</li>
+        <li>Reports show where people reported road surface problems, not where every problem is.</li>
+        <li>This page uses HRM data downloaded on <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time>; it does not update live.</li>
+        <li>These HRM records do not cover roads maintained by the Province.</li>
+      </ul>
+      <a href="{{BASE_PATH}}about.html">Read how we measured</a>
+    </section>
+
+    <section class="share-tools js-only" aria-label="Share this page">
+      <button class="button button-outline" type="button" id="copy-link">Copy link</button>
+      <button class="button button-outline" type="button" id="share-link" hidden>Share</button>
+      <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>HRM data downloaded on <time datetime="{{PULL_DATE}}">{{PULL_DATE_DISPLAY}}</time>. This page does not update live.</p>
+      <p>Independent project using HRM's open data. Not run by HRM.</p>
+      <p class="license-line">Contains information licenced under the Open Government Licence—Halifax.</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://data-hrm.hub.arcgis.com/" target="_blank" rel="noopener noreferrer">HRM Open Data source</a>
+        <a href="{{BASE_PATH}}about.html">About the estimates</a>
+        <a href="{{BASE_PATH}}about-errors.html">About this site</a>
+        <a href="{{BASE_PATH}}data/summary.json" download>Summary numbers (JSON)</a>
+      </nav>
+      <p>Code link pending repository publication. This site uses no cookies and collects no addresses.</p>
+    </div>
+  </footer>
+</body>
+</html>
