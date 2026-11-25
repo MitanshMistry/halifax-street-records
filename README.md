@@ -1,5 +1,7 @@
 # Halifax Street Records
 
+[Visit the live site](https://mitanshmistry.github.io/halifax-street-records/) · [View the source on GitHub](https://github.com/MitanshMistry/halifax-street-records)
+
 A resident-focused summary of past HRM “Street Surface Maintenance” reports: how long HRM took to record a close date, how many records have no close date, and when reports came in.
 
 ## The question and current answer

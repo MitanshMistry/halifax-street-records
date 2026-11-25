@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://mitanshmistry.github.io/halifax-street-records/sitemap.xml
